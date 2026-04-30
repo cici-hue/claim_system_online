@@ -8,7 +8,7 @@ import { getUsers, User } from '../../services/userService'
 import { Claim, STATUS_COLORS, RCA_STATUS_COLORS } from '../../types/claim'
 import { useAuth } from '../../hooks/useAuth'
 import RCAModal from '../RCA/RCAModal'
-import PDFPreviewModal from '../Common/PDFPreviewModal'
+import PDFPreviewModal from '../common/PDFPreviewModal'
 
 const ClaimDetailPage: React.FC = () => {
   const { id } = useParams()
