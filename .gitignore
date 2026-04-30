@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+target/
+*.class
+*.jar
+*.war
+data/
+uploads/
+.env
+.env.local
+.DS_Store
+*.log
