@@ -1,0 +1,12 @@
+target/
+*.class
+*.jar
+*.war
+data/
+uploads/
+.git/
+.gitignore
+.idea/
+.vscode/
+*.iml
+node_modules/

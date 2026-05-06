@@ -1,0 +1,59 @@
+# ============================================================
+# Production Configuration Template — Supabase PostgreSQL
+# ============================================================
+# 使用步骤:
+# 1. 复制此文件为 application-prod.properties
+#    cp application-prod.properties.template application-prod.properties
+# 2. 从 Supabase Dashboard → Settings → Database → Connection string
+#    选择 Java, 复制 JDBC URL 和各字段
+# 3. 填入下面的占位符
+# 4. application-prod.properties 已在 .gitignore 中，不会被提交
+# ============================================================
+
+# --- Supabase PostgreSQL (Session Pooler, 推荐) ---
+# Supabase 提供两种连接方式:
+#   Session Pooler:  Port 6543 (推荐, 支持 PgBouncer)
+#   Transaction Pooler: Port 6543 (默认)
+#   Direct:         Port 5432
+spring.datasource.url=jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.username=postgres.YOUR_PROJECT_REF
+spring.datasource.password=YOUR_DATABASE_PASSWORD
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.show-sql=false
+spring.h2.console.enabled=false
+
+# --- Supabase Storage (文件存储) ---
+# 从 Supabase Dashboard → Settings → API 获取
+app.supabase.url=https://YOUR_PROJECT_REF.supabase.co
+app.supabase.service-role-key=YOUR_SERVICE_ROLE_KEY
+app.supabase.storage.bucket=claim-attachments
+
+# --- JWT (必须通过环境变量设置，不要在此文件中写明文) ---
+# 生成随机密钥: openssl rand -base64 64
+app.jwt.secret=${JWT_SECRET}
+app.jwt.expiration-ms=${JWT_EXPIRATION:86400000}
+
+# --- 文件上传 ---
+spring.servlet.multipart.max-file-size=20MB
+spring.servlet.multipart.max-request-size=50MB
+app.upload.dir=./uploads
+
+# --- 邮件 ---
+spring.mail.host=${MAIL_HOST:smtp.example.com}
+spring.mail.port=${MAIL_PORT:587}
+spring.mail.username=${MAIL_USERNAME:}
+spring.mail.password=${MAIL_PASSWORD:}
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+# --- CORS (部署后改为前端实际域名) ---
+app.cors.allowed-origins=${CORS_ORIGINS:http://localhost:3000}
+
+# --- Server ---
+server.port=${PORT:8080}
+
+# --- Security ---
+app.security.h2-console-enabled=false

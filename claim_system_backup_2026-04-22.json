@@ -1,0 +1,2179 @@
+{
+  "exportedAt": "2026-04-22T00:53:09.594Z",
+  "version": 1,
+  "claim_system_v8": [
+    {
+      "id": 1,
+      "claimNo": "1192411",
+      "vendor": "Nantong Yaohan",
+      "customer": "OVH CAFS",
+      "fid": "100442",
+      "location": "Jiangsu",
+      "styleNo": "POLD754",
+      "orderNo": "013932",
+      "articleNo": "63573900",
+      "inspector": "Andy Ma",
+      "shippedQty": 836,
+      "claimQty": 752,
+      "claimDate": "2026-03-05",
+      "marketInspectionDate": "2026-03-10",
+      "qcInformDate": "2026-04-12",
+      "defectCategory": "workmanship",
+      "qualityDigit": "752",
+      "defectDescription": "Crooked button placket seam",
+      "defectRateByCustomer": "5/32",
+      "fullCheckResult": "108/836",
+      "fullCheckRejectionRate": "12.9%",
+      "status": "In Progress",
+      "qcResponsibility": "Yes",
+      "repeatDefectFlag": false,
+      "repeatOrderNo": "010023",
+      "repeatOrderDeliveryDate": "2026-04-30",
+      "repeatOrderRemark": "attention",
+      "attachments": [
+        {
+          "name": "image (1).png",
+          "data": "data:image/png;base64,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CRnaDz74AIWFhfJmiZiYGJhMJnz++efyrrB0d3fjww8/xN69e7F3796IBmgk2tvbUV9fP+LgNDY2hvwe29vb8dlnnw06hu5MIUPb1taGGTNmyJv7yMjIgMPhkDeH1NPTA4fDAa1Wi4KCAhQUFECj0eDo0aPyobfclClTkJ+fL17TD1d2djZyc3MRGxsr7yIKKeQ17aJFi/D6669jypQp8i6JtrY2LFmyBPv27ZN3Daq7uxuffvop5syZM+BruN1uHDp0CACQlJSERx55BLGxsejp6cFnn32G1tZWAMC0adOQnZ0NADh58iR6enrQ1taGf//73/jhD3+ISZMmScbrdDo88MADcLvdOH36NBITE3Hq1ClJXzD51xr8GoFz5uTk9Al1f8ddvnwZ2dnZfb4HnU6HSZMmid8ver+vhx56CJ999hkSExNx5swZ9PT0QKVSYd68eeIGYHd3Nz7++GP4/X4g6GtpbGxEV1eX+P/t5MmT8Hg84ucUvYZ1TavVanH69Gl5cx9fffUV5s6dK28OacKECZg8eTIaGhr6XXa63W40NTXhscceE2fhwNfT1NSErKwsFBQUIC8vD62trZLrxjNnziArKwv5+fliYOPj41FQUID8/HzEx8eLy8/W1lbExsaioKAAOTk5aGlpQXd3t3iugQReo6CgADqdDqdPnx7Sktbj8QAA8vPzUVBQgJ6eHiQmJiInJwdJSUnIz88X34jQ++YY+H+RmJiIpqYmICiwwf8/Dh8+DLfbjezsbMTHx+P06dNob2/H+fPnodfrGViFChlao9GIuro6ebPEzZs3sWvXLiQlJcm7wpKdnS3+kO3duxeNjY1in9vtRlZWljibaDQatLW1oaenBw899JA4O0+aNAkqlQpdXV3isd/97nfF/suXL+PatWvIysoCAMTGxiItLU38wU1KSkJGRgYAIDExEbGxsZJzDST4NTQaDa5duzak0F6+fBldXV3iMbNmzRr0V2cZGRni15yRkYFLly6hu7sbLS0tiI+Ph0ajAXqX8jNmzBDfCDMyMnD+/Hk0NTUhMzNz0Neg6BYytLm5uXA6ndi2bRuuX78u78b169exbds2tLa24u9//zt2794tHxKWwPVifn4+urq60NjYiJ6eHnR1deHQoUPiJlVDQ4MkFG63G3v37kV9fb24xOxPV1eXuLyIJg888AD0ej3279+P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",
+          "type": "image/png",
+          "uploadedAt": "2026-04-12T03:03:01.323Z"
+        }
+      ],
+      "rcaAttachments": [
+        {
+          "name": "image (1).png",
+          "data": "data:image/png;base64,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CRnaDz74AIWFhfJmiZiYGJhMJnz++efyrrB0d3fjww8/xN69e7F3796IBmgk2tvbUV9fP+LgNDY2hvwe29vb8dlnnw06hu5MIUPb1taGGTNmyJv7yMjIgMPhkDeH1NPTA4fDAa1Wi4KCAhQUFECj0eDo0aPyobfclClTkJ+fL17TD1d2djZyc3MRGxsr7yIKKeQ17aJFi/D6669jypQp8i6JtrY2LFmyBPv27ZN3Daq7uxuffvop5syZM+BruN1uHDp0CACQlJSERx55BLGxsejp6cFnn32G1tZWAMC0adOQnZ0NADh58iR6enrQ1taGf//73/jhD3+ISZMmScbrdDo88MADcLvdOH36NBITE3Hq1ClJXzD51xr8GoFz5uTk9Al1f8ddvnwZ2dnZfb4HnU6HSZMmid8ver+vhx56CJ999hkSExNx5swZ9PT0QKVSYd68eeIGYHd3Nz7++GP4/X4g6GtpbGxEV1eX+P/t5MmT8Hg84ucUvYZ1TavVanH69Gl5cx9fffUV5s6dK28OacKECZg8eTIaGhr6XXa63W40NTXhscceE2fhwNfT1NSErKwsFBQUIC8vD62trZLrxjNnziArKwv5+fliYOPj41FQUID8/HzEx8eLy8/W1lbExsaioKAAOTk5aGlpQXd3t3iugQReo6CgADqdDqdPnx7Sktbj8QAA8vPzUVBQgJ6eHiQmJiInJwdJSUnIz88X34jQ++YY+H+RmJiIpqYmICiwwf8/Dh8+DLfbjezsbMTHx+P06dNob2/H+fPnodfrGViFChlao9GIuro6ebPEzZs3sWvXLiQlJcm7wpKdnS3+kO3duxeNjY1in9vtRlZWljibaDQatLW1oaenBw899JA4O0+aNAkqlQpdXV3isd/97nfF/suXL+PatWvIysoCAMTGxiItLU38wU1KSkJGRgYAIDExEbGxsZJzDST4NTQaDa5duzak0F6+fBldXV3iMbNmzRr0V2cZGRni15yRkYFLly6hu7sbLS0tiI+Ph0ajAXqX8jNmzBDfCDMyMnD+/Hk0NTUhMzNz0Neg6BYytLm5uXA6ndi2bRuuX78u78b169exbds2tLa24u9//zt2794tHxKWwPVifn4+urq60NjYiJ6eHnR1deHQoUPiJlVDQ4MkFG63G3v37kV9fb24xOxPV1eXuLyIJg888AD0ej3279+P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",
+          "type": "image/png"
+        }
+      ],
+      "updatedAt": "2026-04-21T15:25:52.747Z",
+      "updatedBy": "Cici Duan",
+      "createdAt": "2026-04-10T09:26:03.064Z",
+      "createdBy": "Tony Chen",
+      "factoryAgent": "Oi Shanghai IC",
+      "rcaStructured": {
+        "whatHappened": "Crooked button placket seam",
+        "whys": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "fb_man": "Operator not trained on this operation",
+        "fb_machine": "",
+        "fb_material": "",
+        "fb_method": "",
+        "fb_measurement": "",
+        "fb_environment": "",
+        "rootCauseCategory": "",
+        "rootCauseSummary": "",
+        "fac_imm_action": "",
+        "fac_imm_person": "",
+        "fac_imm_deadline": "",
+        "fac_imm_followup": "",
+        "fac_mid_action": "",
+        "fac_mid_person": "",
+        "fac_mid_deadline": "",
+        "fac_mid_followup": "",
+        "fac_long_action": "",
+        "fac_long_person": "",
+        "fac_long_deadline": "",
+        "fac_long_followup": "",
+        "oi_action": "",
+        "oi_person": "",
+        "oi_deadline": "",
+        "oi_followup": "",
+        "correctiveAction": ""
+      },
+      "rcaStatus": "draft",
+      "rcaApprovalHistory": [],
+      "correctiveActions": [],
+      "rcaQualityScore": null,
+      "relatedClaimIds": [],
+      "rcaReminderLog": [],
+      "notes": [],
+      "rcaReasons": [
+        {
+          "label": "Reason 1",
+          "whatHappened": "Crooked button placket seam",
+          "whys": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "label": "Reason 2",
+          "whatHappened": "measurement issue",
+          "whys": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "rcaReport": "[Reason 1] Crooked button placket seam\n[Reason 2] measurement issue"
+    },
+    {
+      "id": 2,
+      "claimNo": "1192533",
+      "vendor": "Wuhan Dolucky",
+      "customer": "OVH CAFS",
+      "fid": "028547",
+      "location": "Flexible",
+      "styleNo": "PD-302TS",
+      "orderNo": "011461",
+      "articleNo": "83429336",
+      "inspector": "Rain Li",
+      "shippedQty": 999,
+      "claimQty": 753,
+      "claimDate": "2026-03-05",
+      "marketInspectionDate": "2026-03-12",
+      "qcInformDate": "2026-03-09",
+      "defectCategory": "formal",
+      "qualityDigit": "753",
+      "defectDescription": "Incorrect material composition label",
+      "defectRateByCustomer": "",
+      "fullCheckResult": "",
+      "fullCheckRejectionRate": "",
+      "status": "In Progress",
+      "qcResponsibility": "Yes",
+      "repeatDefectFlag": false,
+      "repeatOrderNo": "221112",
+      "repeatOrderDeliveryDate": "2026-04-29",
+      "repeatOrderRemark": "",
+      "attachments": [],
+      "rcaAttachments": [],
+      "updatedAt": "2026-04-21T15:32:17.618Z",
+      "updatedBy": "Cici Duan",
+      "createdAt": "2026-04-10T09:26:03.064Z",
+      "createdBy": "Tony Chen",
+      "factoryAgent": "Oi Shanghai IC",
+      "rcaStructured": {
+        "whatHappened": "Incorrect material composition label",
+        "whys": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "fb_man": "Operator skill gap for this operation",
+        "fb_machine": "",
+        "fb_material": "",
+        "fb_method": "",
+        "fb_measurement": "",
+        "fb_environment": "",
+        "rootCauseCategory": "",
+        "rootCauseSummary": "",
+        "fac_imm_action": "",
+        "fac_imm_person": "",
+        "fac_imm_deadline": "",
+        "fac_imm_followup": "",
+        "fac_mid_action": "",
+        "fac_mid_person": "",
+        "fac_mid_deadline": "",
+        "fac_mid_followup": "",
+        "fac_long_action": "",
+        "fac_long_person": "",
+        "fac_long_deadline": "",
+        "fac_long_followup": "",
+        "oi_action": "",
+        "oi_person": "",
+        "oi_deadline": "",
+        "oi_followup": "",
+        "correctiveAction": ""
+      },
+      "rcaStatus": "draft",
+      "rcaApprovalHistory": [],
+      "correctiveActions": [],
+      "rcaQualityScore": null,
+      "relatedClaimIds": [],
+      "rcaReminderLog": [],
+      "notes": [],
+      "rcaReasons": [
+        {
+          "label": "formal",
+          "whatHappened": "Incorrect material composition label",
+          "fb_man": "Operator skill gap for this operation",
+          "fb_machine": "",
+          "fb_material": "",
+          "fb_method": "",
+          "fb_measurement": "",
+          "fb_environment": "",
+          "rootCauseCategory": "",
+          "rootCauseSummary": "",
+          "fac_imm_action": "",
+          "fac_imm_person": "",
+          "fac_imm_deadline": "",
+          "fac_imm_followup": "",
+          "fac_mid_action": "",
+          "fac_mid_person": "",
+          "fac_mid_deadline": "",
+          "fac_mid_followup": "",
+          "fac_long_action": "",
+          "fac_long_person": "",
+          "fac_long_deadline": "",
+          "fac_long_followup": "",
+          "oi_action": "",
+          "oi_person": "",
+          "oi_deadline": "",
+          "oi_followup": "",
+          "whys": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "label": "measurement",
+          "whatHappened": "measurement",
+          "fb_man": "Operator skill gap for this operation",
+          "fb_machine": "",
+          "fb_material": "",
+          "fb_method": "",
+          "fb_measurement": "",
+          "fb_environment": "",
+          "rootCauseCategory": "",
+          "rootCauseSummary": "",
+          "fac_imm_action": "",
+          "fac_imm_person": "",
+          "fac_imm_deadline": "",
+          "fac_imm_followup": "",
+          "fac_mid_action": "",
+          "fac_mid_person": "",
+          "fac_mid_deadline": "",
+          "fac_mid_followup": "",
+          "fac_long_action": "",
+          "fac_long_person": "",
+          "fac_long_deadline": "",
+          "fac_long_followup": "",
+          "oi_action": "",
+          "oi_person": "",
+          "oi_deadline": "",
+          "oi_followup": "",
+          "whys": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "rcaReport": "[formal] Incorrect material composition label\n[measurement] measurement"
+    },
+    {
+      "id": 3,
+      "claimNo": "1192554",
+      "vendor": "Xiangshan Xingang",
+      "customer": "OVH CAFS",
+      "fid": "023020",
+      "location": "Zhejiang",
+      "styleNo": "SD024HW005",
+      "orderNo": "010997",
+      "articleNo": "93901118",
+      "inspector": "Alan Huang",
+      "shippedQty": 1099,
+      "claimQty": 752,
+      "claimDate": "2026-03-12",
+      "marketInspectionDate": "2026-03-18",
+      "qcInformDate": "2026-03-13",
+      "defectCategory": "measurement",
+      "qualityDigit": "752",
+      "defectDescription": "Waist width deviation +2-4cm",
+      "defectRateByCustomer": "",
+      "fullCheckResult": "",
+      "fullCheckRejectionRate": "",
+      "status": "Closed",
+      "qcResponsibility": "No",
+      "attachments": [],
+      "rcaAttachments": [],
+      "updatedAt": "2026-04-11T15:11:09.616Z",
+      "updatedBy": "Tony Chen",
+      "createdAt": "2026-04-10T09:26:03.064Z",
+      "createdBy": "Tony Chen",
+      "rcaStructured": {
+        "whatHappened": "",
+        "whys": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rootCauseCategory": "",
+        "correctiveAction": "",
+        "preventiveAction": "",
+        "targetDate": ""
+      },
+      "rcaStatus": null,
+      "rcaApprovalHistory": [],
+      "correctiveActions": [],
+      "rcaQualityScore": null,
+      "repeatDefectFlag": false,
+      "relatedClaimIds": [],
+      "rcaReminderLog": [],
+      "notes": [],
+      "rcaReasons": []
+    },
+    {
+      "id": 1775920400342,
+      "claimNo": "12312",
+      "vendor": "Nantong Yaohan",
+      "customer": "Bonprix",
+      "fid": "023020",
+      "location": "Jiangsu",
+      "styleNo": "4343242",
+      "orderNo": "",
+      "articleNo": "",
+      "inspector": "Jerry Qu",
+      "shippedQty": 545,
+      "claimQty": 545,
+      "claimDate": "2026-02-18",
+      "marketInspectionDate": "2026-01-01",
+      "qcInformDate": "2026-02-21",
+      "defectCategory": "formal",
+      "qualityDigit": "753",
+      "defectDescription": "323232\n2312421412",
+      "defectRateByCustomer": "",
+      "fullCheckResult": "",
+      "fullCheckRejectionRate": "",
+      "status": "In Progress",
+      "qcResponsibility": "Yes",
+      "repeatDefectFlag": false,
+      "repeatOrderNo": "",
+      "repeatOrderDeliveryDate": "",
+      "repeatOrderRemark": "",
+      "attachments": [],
+      "rcaAttachments": [],
+      "updatedAt": "2026-04-21T14:18:40.857Z",
+      "updatedBy": "Cici Duan",
+      "createdAt": "2026-04-11T15:13:20.342Z",
+      "createdBy": "Tony Chen",
+      "factoryAgent": "Oi Shanghai IC",
+      "rcaStructured": {
+        "whatHappened": "",
+        "whys": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rootCauseCategory": "",
+        "correctiveAction": "",
+        "preventiveAction": "",
+        "targetDate": ""
+      },
+      "rcaStatus": null,
+      "rcaApprovalHistory": [],
+      "correctiveActions": [],
+      "rcaQualityScore": null,
+      "relatedClaimIds": [],
+      "rcaReminderLog": [],
+      "notes": [],
+      "rcaReasons": []
+    },
+    {
+      "id": 1775920614941,
+      "claimNo": "4343",
+      "vendor": "43434",
+      "customer": "Bonprix",
+      "fid": "",
+      "location": "Jiangsu",
+      "styleNo": "",
+      "orderNo": "",
+      "articleNo": "",
+      "inspector": "",
+      "shippedQty": 0,
+      "claimQty": 675,
+      "claimDate": "",
+      "marketInspectionDate": "",
+      "qcInformDate": "",
+      "defectCategory": "formal",
+      "qualityDigit": "",
+      "defectDescription": "",
+      "defectRateByCustomer": "",
+      "fullCheckResult": "",
+      "fullCheckRejectionRate": "",
+      "status": "Cancelled",
+      "qcResponsibility": "",
+      "attachments": [],
+      "rcaAttachments": [],
+      "updatedAt": "2026-04-12T11:01:53.146Z",
+      "updatedBy": "Cici Duan",
+      "createdAt": "2026-04-11T15:16:54.941Z",
+      "createdBy": "Tony Chen",
+      "factoryAgent": "Oi Shanghai IC",
+      "rcaStructured": {
+        "whatHappened": "",
+        "whys": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rootCauseCategory": "",
+        "correctiveAction": "",
+        "preventiveAction": "",
+        "targetDate": ""
+      },
+      "rcaStatus": null,
+      "rcaApprovalHistory": [],
+      "correctiveActions": [],
+      "rcaQualityScore": null,
+      "repeatDefectFlag": false,
+      "relatedClaimIds": [],
+      "rcaReminderLog": [],
+      "notes": [],
+      "rcaReasons": []
+    },
+    {
+      "id": 1775982667116,
+      "claimNo": "234234234",
+      "vendor": "guangqing",
+      "customer": "Bonprix",
+      "fid": "024047",
+      "location": "Jiangsu",
+      "styleNo": "",
+      "orderNo": "",
+      "articleNo": "",
+      "inspector": "",
+      "shippedQty": 0,
+      "claimQty": 0,
+      "claimDate": "",
+      "marketInspectionDate": "",
+      "qcInformDate": "",
+      "defectCategory": "formal",
+      "qualityDigit": "",
+      "defectDescription": "",
+      "defectRateByCustomer": "",
+      "fullCheckResult": "",
+      "fullCheckRejectionRate": "",
+      "status": "Open",
+      "qcResponsibility": "",
+      "attachments": [],
+      "rcaAttachments": [],
+      "updatedAt": "2026-04-12T08:31:07.116Z",
+      "updatedBy": "Abby Huang",
+      "createdAt": "2026-04-12T08:31:07.116Z",
+      "createdBy": "Abby Huang",
+      "factoryAgent": "Oi China HKG",
+      "rcaStructured": {
+        "whatHappened": "",
+        "whys": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rootCauseCategory": "",
+        "correctiveAction": "",
+        "preventiveAction": "",
+        "targetDate": ""
+      },
+      "rcaStatus": null,
+      "rcaApprovalHistory": [],
+      "correctiveActions": [],
+      "rcaQualityScore": null,
+      "repeatDefectFlag": false,
+      "relatedClaimIds": [],
+      "rcaReminderLog": [],
+      "notes": [],
+      "rcaReasons": []
+    }
+  ],
+  "claim_users_v6": [
+    {
+      "id": 2,
+      "username": "martin.zhang",
+      "fullname": "Martin Zhang",
+      "email": "martin.zhang@ottoint.com",
+      "password": "martin123",
+      "role": "supervisor",
+      "team": "Zhejiang",
+      "created": "2026-04-10T09:26:03.064Z",
+      "factoryAgent": "Oi Shanghai IC"
+    },
+    {
+      "id": 3,
+      "username": "andy.ma",
+      "fullname": "Andy Ma",
+      "email": "andy.ma@ottoint.com",
+      "password": "andy123",
+      "role": "inspector",
+      "team": "Jiangsu",
+      "created": "2026-04-10T09:26:03.064Z",
+      "factoryAgent": "Oi Shanghai IC"
+    },
+    {
+      "id": 4,
+      "username": "alan.huang",
+      "fullname": "Alan Huang",
+      "email": "alan.s.huang@ottoint.com",
+      "password": "alan123",
+      "role": "inspector",
+      "team": "Zhejiang",
+      "created": "2026-04-10T09:26:03.064Z",
+      "factoryAgent": "Oi Shanghai IC"
+    },
+    {
+      "id": 5,
+      "username": "rain.li",
+      "fullname": "Rain Li",
+      "email": "rain.li@ottoint.com",
+      "password": "rain123",
+      "role": "inspector",
+      "team": "Flexible",
+      "created": "2026-04-10T09:26:03.064Z",
+      "factoryAgent": "Oi Shanghai IC"
+    },
+    {
+      "id": 1775830655177,
+      "username": "tony.chen",
+      "fullname": "Tony Chen",
+      "email": "tony.chen@ottoint.com",
+      "password": "tony123",
+      "role": "admin",
+      "team": "",
+      "created": "2026-04-10T14:17:35.177Z",
+      "factoryAgent": "Oi Shanghai IC"
+    },
+    {
+      "id": 1775830843032,
+      "username": "cici.duan",
+      "fullname": "Cici Duan",
+      "email": "cici.duan@ottoint.com",
+      "password": "cici123",
+      "role": "superadmin",
+      "team": "",
+      "created": "2026-04-10T14:20:43.032Z",
+      "factoryAgent": "Oi Shanghai IC"
+    },
+    {
+      "id": 1775830876146,
+      "username": "jerry.qu",
+      "fullname": "Jerry Qu",
+      "email": "jerry.qu@ottoint.com",
+      "password": "jerry123",
+      "role": "inspector",
+      "team": "Flexible",
+      "created": "2026-04-10T14:21:16.146Z",
+      "factoryAgent": "Oi Shanghai IC"
+    },
+    {
+      "id": 1775830929605,
+      "username": "lin.feng",
+      "fullname": "Lin Feng",
+      "email": "lin.feng@ottoint.com",
+      "password": "lin123",
+      "role": "admin",
+      "team": "",
+      "created": "2026-04-10T14:22:09.605Z",
+      "factoryAgent": "Oi Shanghai IC"
+    },
+    {
+      "id": 1775831205772,
+      "username": "janet.lj.pu",
+      "fullname": "Janet Lj Pu",
+      "email": "janet.lj.pu@ottoint.com",
+      "password": "janet123",
+      "role": "admin",
+      "team": "Manager",
+      "created": "2026-04-10T14:26:45.772Z"
+    },
+    {
+      "id": 1775981818006,
+      "username": "biwell.yu",
+      "fullname": "Biwell Yu",
+      "email": "biwell.yu@ottoint.com",
+      "password": "biwell123",
+      "role": "admin",
+      "team": "",
+      "factoryAgent": "Oi Qingdao IC",
+      "created": "2026-04-12T08:16:58.006Z"
+    },
+    {
+      "id": 1775981847483,
+      "username": "abby.huang",
+      "fullname": "Abby Huang",
+      "email": "abby.huang@ottoint.com",
+      "password": "abby123",
+      "role": "admin",
+      "team": "",
+      "factoryAgent": "Oi China HKG",
+      "created": "2026-04-12T08:17:27.483Z"
+    },
+    {
+      "id": 1775981879637,
+      "username": "ping.cui",
+      "fullname": "Ping Cui",
+      "email": "ping.cui@ottoint.com",
+      "password": "ping123",
+      "role": "admin",
+      "team": "",
+      "factoryAgent": "Oi China SHA",
+      "created": "2026-04-12T08:17:59.637Z"
+    },
+    {
+      "id": 1776181570551,
+      "username": "ray.pan",
+      "fullname": "Ray Pan",
+      "email": "ray.pan@ottoint.com",
+      "password": "ray123",
+      "role": "inspector",
+      "team": "",
+      "factoryAgent": "Oi China HKG",
+      "created": "2026-04-14T15:46:10.551Z"
+    }
+  ],
+  "claim_audit_logs_v6": [
+    {
+      "id": 1776785537618,
+      "timestamp": "2026-04-21T15:32:17.618Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776785517369,
+      "timestamp": "2026-04-21T15:31:57.369Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776785152748,
+      "timestamp": "2026-04-21T15:25:52.748Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192411"
+    },
+    {
+      "id": 1776781120857,
+      "timestamp": "2026-04-21T14:18:40.857Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 12312 (originally created by Tony Chen)"
+    },
+    {
+      "id": 1776780083147,
+      "timestamp": "2026-04-21T14:01:23.147Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "DELETE_USER",
+      "details": "Deleted user ID: 1775830970856"
+    },
+    {
+      "id": 1776780073032,
+      "timestamp": "2026-04-21T14:01:13.032Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1776778669580,
+      "timestamp": "2026-04-21T13:37:49.580Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192533 (originally created by Tony Chen)"
+    },
+    {
+      "id": 1776778165851,
+      "timestamp": "2026-04-21T13:29:25.851Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by Tony Chen)"
+    },
+    {
+      "id": 1776604558531,
+      "timestamp": "2026-04-19T13:15:58.531Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "RCA_SUBMITTED",
+      "details": "RCA submitted for claim 1192533"
+    },
+    {
+      "id": 1776604538562,
+      "timestamp": "2026-04-19T13:15:38.562Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "RCA_REJECTED",
+      "details": "RCA rejected for claim 1192533: 7667789"
+    },
+    {
+      "id": 1776604519568,
+      "timestamp": "2026-04-19T13:15:19.568Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "RCA_SUBMITTED",
+      "details": "RCA submitted for claim 1192533"
+    },
+    {
+      "id": 1776604474089,
+      "timestamp": "2026-04-19T13:14:34.089Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776604465786,
+      "timestamp": "2026-04-19T13:14:25.786Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776604461363,
+      "timestamp": "2026-04-19T13:14:21.363Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776530942163,
+      "timestamp": "2026-04-18T16:49:02.163Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776530704739,
+      "timestamp": "2026-04-18T16:45:04.739Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776530684364,
+      "timestamp": "2026-04-18T16:44:44.364Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776530683401,
+      "timestamp": "2026-04-18T16:44:43.401Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776530681915,
+      "timestamp": "2026-04-18T16:44:41.915Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776530680478,
+      "timestamp": "2026-04-18T16:44:40.478Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192533"
+    },
+    {
+      "id": 1776526946722,
+      "timestamp": "2026-04-18T15:42:26.722Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776525610659,
+      "timestamp": "2026-04-18T15:20:10.659Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1776525576808,
+      "timestamp": "2026-04-18T15:19:36.808Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: andy.ma"
+    },
+    {
+      "id": 1776524301004,
+      "timestamp": "2026-04-18T14:58:21.004Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776523378354,
+      "timestamp": "2026-04-18T14:42:58.354Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: andy.ma"
+    },
+    {
+      "id": 1776182793852,
+      "timestamp": "2026-04-14T16:06:33.852Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776182724761,
+      "timestamp": "2026-04-14T16:05:24.761Z",
+      "user": "martin.zhang",
+      "userRole": "supervisor",
+      "action": "LOGIN",
+      "details": "User logged in: martin.zhang"
+    },
+    {
+      "id": 1776182598552,
+      "timestamp": "2026-04-14T16:03:18.552Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776181800202,
+      "timestamp": "2026-04-14T15:50:00.202Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776181771369,
+      "timestamp": "2026-04-14T15:49:31.369Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: andy.ma"
+    },
+    {
+      "id": 1776181626393,
+      "timestamp": "2026-04-14T15:47:06.393Z",
+      "user": "rain.li",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: rain.li"
+    },
+    {
+      "id": 1776181609742,
+      "timestamp": "2026-04-14T15:46:49.742Z",
+      "user": "ray.pan",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: ray.pan"
+    },
+    {
+      "id": 1776181579947,
+      "timestamp": "2026-04-14T15:46:19.947Z",
+      "user": "abby.huang",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: abby.huang"
+    },
+    {
+      "id": 1776181570551,
+      "timestamp": "2026-04-14T15:46:10.551Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "ADD_USER",
+      "details": "Added user: ray.pan (ray.pan@ottoint.com)"
+    },
+    {
+      "id": 1776181535876,
+      "timestamp": "2026-04-14T15:45:35.876Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1776181519256,
+      "timestamp": "2026-04-14T15:45:19.256Z",
+      "user": "abby.huang",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: abby.huang"
+    },
+    {
+      "id": 1776181279258,
+      "timestamp": "2026-04-14T15:41:19.258Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776181268037,
+      "timestamp": "2026-04-14T15:41:08.037Z",
+      "user": "martin.zhang",
+      "userRole": "supervisor",
+      "action": "LOGIN",
+      "details": "User logged in: martin.zhang"
+    },
+    {
+      "id": 1776180930681,
+      "timestamp": "2026-04-14T15:35:30.681Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: andy.ma"
+    },
+    {
+      "id": 1776180821298,
+      "timestamp": "2026-04-14T15:33:41.298Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "RCA_SCORED",
+      "details": "RCA scored (avg 4.3) for claim 1192411"
+    },
+    {
+      "id": 1776180785291,
+      "timestamp": "2026-04-14T15:33:05.291Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776180720972,
+      "timestamp": "2026-04-14T15:32:00.972Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: andy.ma"
+    },
+    {
+      "id": 1776180671883,
+      "timestamp": "2026-04-14T15:31:11.883Z",
+      "user": "rain.li",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: rain.li"
+    },
+    {
+      "id": 1776180652532,
+      "timestamp": "2026-04-14T15:30:52.532Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: lin.feng"
+    },
+    {
+      "id": 1776180645274,
+      "timestamp": "2026-04-14T15:30:45.274Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: bill.cheung"
+    },
+    {
+      "id": 1776180636422,
+      "timestamp": "2026-04-14T15:30:36.422Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: jerry.qu"
+    },
+    {
+      "id": 1776180629660,
+      "timestamp": "2026-04-14T15:30:29.660Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: rain.li"
+    },
+    {
+      "id": 1776180624031,
+      "timestamp": "2026-04-14T15:30:24.031Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: alan.huang"
+    },
+    {
+      "id": 1776180616802,
+      "timestamp": "2026-04-14T15:30:16.802Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: andy.ma"
+    },
+    {
+      "id": 1776180604120,
+      "timestamp": "2026-04-14T15:30:04.120Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1776180581281,
+      "timestamp": "2026-04-14T15:29:41.281Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776180552653,
+      "timestamp": "2026-04-14T15:29:12.653Z",
+      "user": "rain.li",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: rain.li"
+    },
+    {
+      "id": 1776180534828,
+      "timestamp": "2026-04-14T15:28:54.828Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776180515238,
+      "timestamp": "2026-04-14T15:28:35.238Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: andy.ma"
+    },
+    {
+      "id": 1776180471662,
+      "timestamp": "2026-04-14T15:27:51.662Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "RCA_FINAL_APPROVED",
+      "details": "RCA final-approved for claim 1192411"
+    },
+    {
+      "id": 1776180460142,
+      "timestamp": "2026-04-14T15:27:40.142Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "RCA_SUBMITTED",
+      "details": "RCA submitted for claim 1192411"
+    },
+    {
+      "id": 1776180452381,
+      "timestamp": "2026-04-14T15:27:32.381Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192411"
+    },
+    {
+      "id": 1776180393758,
+      "timestamp": "2026-04-14T15:26:33.758Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "RCA_COMMENT",
+      "details": "manager comment saved for claim 1192411"
+    },
+    {
+      "id": 1776180363814,
+      "timestamp": "2026-04-14T15:26:03.814Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1776172694178,
+      "timestamp": "2026-04-14T13:18:14.178Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 12312 (originally created by Tony Chen)"
+    },
+    {
+      "id": 1775991749214,
+      "timestamp": "2026-04-12T11:02:29.214Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "DELETE_CLAIM",
+      "details": "Deleted claim 434242"
+    },
+    {
+      "id": 1775991747460,
+      "timestamp": "2026-04-12T11:02:27.460Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 434242 (originally created by Tony Chen)"
+    },
+    {
+      "id": 1775991737094,
+      "timestamp": "2026-04-12T11:02:17.094Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "DELETE_CLAIM",
+      "details": "Deleted claim 13123123"
+    },
+    {
+      "id": 1775991734313,
+      "timestamp": "2026-04-12T11:02:14.313Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 13123123 (originally created by Tony Chen)"
+    },
+    {
+      "id": 1775991713147,
+      "timestamp": "2026-04-12T11:01:53.147Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 4343 (originally created by Tony Chen)"
+    },
+    {
+      "id": 1775989070686,
+      "timestamp": "2026-04-12T10:17:50.686Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775989038455,
+      "timestamp": "2026-04-12T10:17:18.455Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775988663323,
+      "timestamp": "2026-04-12T10:11:03.323Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "DELETE_CLAIM",
+      "details": "Deleted claim 2324234"
+    },
+    {
+      "id": 1775988661089,
+      "timestamp": "2026-04-12T10:11:01.089Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 2324234 (originally created by Tony Chen)"
+    },
+    {
+      "id": 1775988601255,
+      "timestamp": "2026-04-12T10:10:01.255Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775988387908,
+      "timestamp": "2026-04-12T10:06:27.908Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "DELETE_CLAIM",
+      "details": "Deleted claim 323232"
+    },
+    {
+      "id": 1775988380911,
+      "timestamp": "2026-04-12T10:06:20.911Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 323232 (originally created by Cici Duan)"
+    },
+    {
+      "id": 1775987612831,
+      "timestamp": "2026-04-12T09:53:32.831Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 13123123 (originally created by Tony Chen)"
+    },
+    {
+      "id": 1775987451949,
+      "timestamp": "2026-04-12T09:50:51.949Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775987190079,
+      "timestamp": "2026-04-12T09:46:30.079Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775987139660,
+      "timestamp": "2026-04-12T09:45:39.660Z",
+      "user": "abby.huang",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: abby.huang"
+    },
+    {
+      "id": 1775987116478,
+      "timestamp": "2026-04-12T09:45:16.478Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775987100292,
+      "timestamp": "2026-04-12T09:45:00.292Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: andy.ma"
+    },
+    {
+      "id": 1775986949029,
+      "timestamp": "2026-04-12T09:42:29.029Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775986734481,
+      "timestamp": "2026-04-12T09:38:54.481Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775984928302,
+      "timestamp": "2026-04-12T09:08:48.302Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775984770915,
+      "timestamp": "2026-04-12T09:06:10.915Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775984564006,
+      "timestamp": "2026-04-12T09:02:44.006Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775984440221,
+      "timestamp": "2026-04-12T09:00:40.221Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775984291254,
+      "timestamp": "2026-04-12T08:58:11.254Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775984198531,
+      "timestamp": "2026-04-12T08:56:38.531Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775984174773,
+      "timestamp": "2026-04-12T08:56:14.773Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775983688126,
+      "timestamp": "2026-04-12T08:48:08.126Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775983678381,
+      "timestamp": "2026-04-12T08:47:58.381Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775983666825,
+      "timestamp": "2026-04-12T08:47:46.825Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: cici.duan"
+    },
+    {
+      "id": 1775983444415,
+      "timestamp": "2026-04-12T08:44:04.415Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775983435241,
+      "timestamp": "2026-04-12T08:43:55.241Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775983423009,
+      "timestamp": "2026-04-12T08:43:43.009Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: cici.duan"
+    },
+    {
+      "id": 1775983225050,
+      "timestamp": "2026-04-12T08:40:25.050Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775983178277,
+      "timestamp": "2026-04-12T08:39:38.277Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "ADD_CLAIM",
+      "details": "Added claim: 323232"
+    },
+    {
+      "id": 1775983123721,
+      "timestamp": "2026-04-12T08:38:43.721Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775983107504,
+      "timestamp": "2026-04-12T08:38:27.504Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775983021405,
+      "timestamp": "2026-04-12T08:37:01.405Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775982796853,
+      "timestamp": "2026-04-12T08:33:16.853Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "ADD_CLAIM",
+      "details": "Added claim: 2324234"
+    },
+    {
+      "id": 1775982766083,
+      "timestamp": "2026-04-12T08:32:46.083Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775982746889,
+      "timestamp": "2026-04-12T08:32:26.889Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775982685493,
+      "timestamp": "2026-04-12T08:31:25.493Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775982667116,
+      "timestamp": "2026-04-12T08:31:07.116Z",
+      "user": "abby.huang",
+      "userRole": "admin",
+      "action": "ADD_CLAIM",
+      "details": "Added claim: 234234234"
+    },
+    {
+      "id": 1775982620689,
+      "timestamp": "2026-04-12T08:30:20.689Z",
+      "user": "abby.huang",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: abby.huang"
+    },
+    {
+      "id": 1775982611462,
+      "timestamp": "2026-04-12T08:30:11.462Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "EDIT_USER",
+      "details": "Edited user: abby.huang"
+    },
+    {
+      "id": 1775982484340,
+      "timestamp": "2026-04-12T08:28:04.340Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775982470733,
+      "timestamp": "2026-04-12T08:27:50.733Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: cici.duan"
+    },
+    {
+      "id": 1775981908895,
+      "timestamp": "2026-04-12T08:18:28.895Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775981879637,
+      "timestamp": "2026-04-12T08:17:59.637Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "ADD_USER",
+      "details": "Added user: ping.cui (ping.cui@ottoint.com)"
+    },
+    {
+      "id": 1775981847483,
+      "timestamp": "2026-04-12T08:17:27.483Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "ADD_USER",
+      "details": "Added user: abby.huang (abby.huang@ottoint.com)"
+    },
+    {
+      "id": 1775981818006,
+      "timestamp": "2026-04-12T08:16:58.006Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "ADD_USER",
+      "details": "Added user: biwell.yu (biwell.yu@ottoint.com)"
+    },
+    {
+      "id": 1775981780521,
+      "timestamp": "2026-04-12T08:16:20.521Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: cici.duan"
+    },
+    {
+      "id": 1775981771233,
+      "timestamp": "2026-04-12T08:16:11.233Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775981755893,
+      "timestamp": "2026-04-12T08:15:55.893Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: martin.zhang"
+    },
+    {
+      "id": 1775981559722,
+      "timestamp": "2026-04-12T08:12:39.722Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "ADD_CLAIM",
+      "details": "Added claim: 434242"
+    },
+    {
+      "id": 1775981536990,
+      "timestamp": "2026-04-12T08:12:16.990Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 13123123 (originally created by tony.chen)"
+    },
+    {
+      "id": 1775980777975,
+      "timestamp": "2026-04-12T07:59:37.975Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775980589747,
+      "timestamp": "2026-04-12T07:56:29.747Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775980500989,
+      "timestamp": "2026-04-12T07:55:00.989Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775964572023,
+      "timestamp": "2026-04-12T03:29:32.023Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "ADD_CLAIM",
+      "details": "Added claim: ghgh"
+    },
+    {
+      "id": 1775963307453,
+      "timestamp": "2026-04-12T03:08:27.453Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192533 (originally created by )"
+    },
+    {
+      "id": 1775963060832,
+      "timestamp": "2026-04-12T03:04:20.832Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775963003073,
+      "timestamp": "2026-04-12T03:03:23.073Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192411"
+    },
+    {
+      "id": 1775962981323,
+      "timestamp": "2026-04-12T03:03:01.323Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "UPLOAD_ATTACHMENT",
+      "details": "Uploaded image (1).png to claim 1192411"
+    },
+    {
+      "id": 1775922226655,
+      "timestamp": "2026-04-11T15:43:46.655Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775922197306,
+      "timestamp": "2026-04-11T15:43:17.306Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775922140500,
+      "timestamp": "2026-04-11T15:42:20.500Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775920958540,
+      "timestamp": "2026-04-11T15:22:38.540Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 12312 (originally created by tony.chen)"
+    },
+    {
+      "id": 1775920698819,
+      "timestamp": "2026-04-11T15:18:18.819Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 4343 (originally created by tony.chen)"
+    },
+    {
+      "id": 1775920688633,
+      "timestamp": "2026-04-11T15:18:08.633Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 12312 (originally created by tony.chen)"
+    },
+    {
+      "id": 1775920668734,
+      "timestamp": "2026-04-11T15:17:48.734Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 12312 (originally created by tony.chen)"
+    },
+    {
+      "id": 1775920614941,
+      "timestamp": "2026-04-11T15:16:54.941Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "ADD_CLAIM",
+      "details": "Added claim: 4343"
+    },
+    {
+      "id": 1775920603342,
+      "timestamp": "2026-04-11T15:16:43.342Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 12312 (originally created by tony.chen)"
+    },
+    {
+      "id": 1775920400342,
+      "timestamp": "2026-04-11T15:13:20.342Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "ADD_CLAIM",
+      "details": "Added claim: 12312"
+    },
+    {
+      "id": 1775920323896,
+      "timestamp": "2026-04-11T15:12:03.896Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192533 (originally created by )"
+    },
+    {
+      "id": 1775920300997,
+      "timestamp": "2026-04-11T15:11:40.997Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192533 (originally created by )"
+    },
+    {
+      "id": 1775920269616,
+      "timestamp": "2026-04-11T15:11:09.616Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192554 (originally created by )"
+    },
+    {
+      "id": 1775920257653,
+      "timestamp": "2026-04-11T15:10:57.653Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192533 (originally created by )"
+    },
+    {
+      "id": 1775920248300,
+      "timestamp": "2026-04-11T15:10:48.300Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775919447463,
+      "timestamp": "2026-04-11T14:57:27.463Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775919428562,
+      "timestamp": "2026-04-11T14:57:08.562Z",
+      "user": "janet.lj.pu",
+      "userRole": "admin",
+      "action": "RCA_COMMENT",
+      "details": "manager comment saved for claim 1192411"
+    },
+    {
+      "id": 1775919416392,
+      "timestamp": "2026-04-11T14:56:56.392Z",
+      "user": "janet.lj.pu",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: janet.lj.pu"
+    },
+    {
+      "id": 1775919393310,
+      "timestamp": "2026-04-11T14:56:33.310Z",
+      "user": "cici.duan",
+      "userRole": "superadmin",
+      "action": "LOGIN",
+      "details": "User logged in: cici.duan"
+    },
+    {
+      "id": 1775919383904,
+      "timestamp": "2026-04-11T14:56:23.904Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: cici.duan"
+    },
+    {
+      "id": 1775919374710,
+      "timestamp": "2026-04-11T14:56:14.710Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775919354398,
+      "timestamp": "2026-04-11T14:55:54.398Z",
+      "user": "janet.lj.pu",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: janet.lj.pu"
+    },
+    {
+      "id": 1775919337147,
+      "timestamp": "2026-04-11T14:55:37.147Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: janet.lj.pu"
+    },
+    {
+      "id": 1775919318298,
+      "timestamp": "2026-04-11T14:55:18.298Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775919301032,
+      "timestamp": "2026-04-11T14:55:01.032Z",
+      "user": "martin.zhang",
+      "userRole": "supervisor",
+      "action": "RCA_COMMENT",
+      "details": "supervisor comment saved for claim 1192411"
+    },
+    {
+      "id": 1775919278460,
+      "timestamp": "2026-04-11T14:54:38.460Z",
+      "user": "martin.zhang",
+      "userRole": "supervisor",
+      "action": "LOGIN",
+      "details": "User logged in: martin.zhang"
+    },
+    {
+      "id": 1775919258477,
+      "timestamp": "2026-04-11T14:54:18.477Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: andy.ma"
+    },
+    {
+      "id": 1775919228721,
+      "timestamp": "2026-04-11T14:53:48.721Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: martin.zhang"
+    },
+    {
+      "id": 1775919211366,
+      "timestamp": "2026-04-11T14:53:31.366Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: andy.ma"
+    },
+    {
+      "id": 1775919201858,
+      "timestamp": "2026-04-11T14:53:21.858Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775918985796,
+      "timestamp": "2026-04-11T14:49:45.796Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775918957528,
+      "timestamp": "2026-04-11T14:49:17.528Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "EDIT_RCA",
+      "details": "Updated RCA for claim 1192411"
+    },
+    {
+      "id": 1775918904195,
+      "timestamp": "2026-04-11T14:48:24.195Z",
+      "user": "andy.ma",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: andy.ma"
+    },
+    {
+      "id": 1775918887449,
+      "timestamp": "2026-04-11T14:48:07.449Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: andy.ma"
+    },
+    {
+      "id": 1775918877618,
+      "timestamp": "2026-04-11T14:47:57.618Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775918868260,
+      "timestamp": "2026-04-11T14:47:48.260Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: cici.duan"
+    },
+    {
+      "id": 1775918831362,
+      "timestamp": "2026-04-11T14:47:11.362Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: cici.duan"
+    },
+    {
+      "id": 1775918647892,
+      "timestamp": "2026-04-11T14:44:07.892Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: martin.zhang"
+    },
+    {
+      "id": 1775918636322,
+      "timestamp": "2026-04-11T14:43:56.322Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: janet.lj.pu"
+    },
+    {
+      "id": 1775918616168,
+      "timestamp": "2026-04-11T14:43:36.168Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775918601535,
+      "timestamp": "2026-04-11T14:43:21.535Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: andy.ma"
+    },
+    {
+      "id": 1775917117959,
+      "timestamp": "2026-04-11T14:18:37.959Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775917099832,
+      "timestamp": "2026-04-11T14:18:19.832Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192554 (originally created by )"
+    },
+    {
+      "id": 1775917060837,
+      "timestamp": "2026-04-11T14:17:40.837Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775916474554,
+      "timestamp": "2026-04-11T14:07:54.554Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775916338461,
+      "timestamp": "2026-04-11T14:05:38.461Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775910993299,
+      "timestamp": "2026-04-11T12:36:33.299Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775908809120,
+      "timestamp": "2026-04-11T12:00:09.120Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775908446771,
+      "timestamp": "2026-04-11T11:54:06.771Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "EDIT_CLAIM",
+      "details": "Edited claim: 1192411 (originally created by )"
+    },
+    {
+      "id": 1775897432574,
+      "timestamp": "2026-04-11T08:50:32.574Z",
+      "user": "tony.chen",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775897420657,
+      "timestamp": "2026-04-11T08:50:20.657Z",
+      "user": "admin",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: andy.ma"
+    },
+    {
+      "id": 1775897410742,
+      "timestamp": "2026-04-11T08:50:10.742Z",
+      "user": "admin",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: cici.duan"
+    },
+    {
+      "id": 1775897382481,
+      "timestamp": "2026-04-11T08:49:42.481Z",
+      "user": "admin",
+      "userRole": "admin",
+      "action": "EDIT_USER",
+      "details": "Edited user: tony.chen"
+    },
+    {
+      "id": 1775897237799,
+      "timestamp": "2026-04-11T08:47:17.799Z",
+      "user": "admin",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: admin"
+    },
+    {
+      "id": 1775897228461,
+      "timestamp": "2026-04-11T08:47:08.461Z",
+      "user": "tony.chen",
+      "userRole": "inspector",
+      "action": "LOGIN",
+      "details": "User logged in: tony.chen"
+    },
+    {
+      "id": 1775897205354,
+      "timestamp": "2026-04-11T08:46:45.354Z",
+      "user": "admin",
+      "userRole": "admin",
+      "action": "LOGIN",
+      "details": "User logged in: admin"
+    }
+  ],
+  "claim_col_config_v2": [
+    {
+      "key": "claimDate",
+      "visible": true
+    },
+    {
+      "key": "claimNo",
+      "visible": true
+    },
+    {
+      "key": "vendor",
+      "visible": true
+    },
+    {
+      "key": "customer",
+      "visible": true
+    },
+    {
+      "key": "fid",
+      "visible": false
+    },
+    {
+      "key": "styleNo",
+      "visible": false
+    },
+    {
+      "key": "orderNo",
+      "visible": false
+    },
+    {
+      "key": "articleNo",
+      "visible": false
+    },
+    {
+      "key": "inspector",
+      "visible": false
+    },
+    {
+      "key": "shippedQty",
+      "visible": true
+    },
+    {
+      "key": "claimQty",
+      "visible": true
+    },
+    {
+      "key": "defectCategory",
+      "visible": true
+    },
+    {
+      "key": "marketInspectionDate",
+      "visible": false
+    },
+    {
+      "key": "qcInformDate",
+      "visible": false
+    },
+    {
+      "key": "qualityDigit",
+      "visible": false
+    },
+    {
+      "key": "status",
+      "visible": true
+    },
+    {
+      "key": "qcResponsibility",
+      "visible": true
+    },
+    {
+      "key": "attachments",
+      "visible": false
+    },
+    {
+      "key": "rca",
+      "visible": true
+    },
+    {
+      "key": "location",
+      "visible": true
+    },
+    {
+      "key": "factoryAgent",
+      "visible": true
+    }
+  ],
+  "claim_col_widths_v1": {
+    "fid": 72,
+    "rca": 90,
+    "claimDate": 135,
+    "vendor": 140,
+    "factoryAgent": 117,
+    "defectCategory": 132,
+    "qcResponsibility": 87,
+    "status": 102,
+    "customer": 94,
+    "claimNo": 72
+  }
+}

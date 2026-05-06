@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claim Management System v8</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <!-- V8 Table Styles -->
+    <style>
+      /* ═══════════════════════════════════════════════════════════════════ */
+      /* G1: CSS Custom Properties (Design Tokens) */
+      /* ═══════════════════════════════════════════════════════════════════ */
+      :root {
+        /* Primary palette */
+        --color-primary: #1a3a5c;
+        --color-primary-dark: #0f2540;
+        --color-primary-light: #2c5f8a;
+        --color-primary-gradient: linear-gradient(200deg, #1e4270 0%, #0f2540 100%);
+
+        /* Accent */
+        --color-accent: #3b82f6;
+        --color-accent-light: #eff6ff;
+
+        /* Semantic */
+        --color-success: #22c55e;
+        --color-warning: #f59e0b;
+        --color-danger: #ef4444;
+        --color-info: #0891b2;
+
+        /* Neutral */
+        --color-bg: #f0f4f8;
+        --color-bg-card: #ffffff;
+        --color-bg-subtle: #f8fafc;
+        --color-border: #e2e8f0;
+        --color-border-light: #f1f5f9;
+        --color-text: #0f172a;
+        --color-text-secondary: #64748b;
+        --color-text-muted: #94a3b8;
+
+        /* Shadows */
+        --shadow-sm: 0 1px 3px rgba(15,23,42,0.06);
+        --shadow-md: 0 2px 8px rgba(15,23,42,0.08);
+        --shadow-lg: 0 10px 32px rgba(15,23,42,0.12);
+
+        /* Radii */
+        --radius-sm: 6px;
+        --radius-md: 8px;
+        --radius-lg: 12px;
+        --radius-xl: 16px;
+        --radius-pill: 20px;
+
+        /* Typography */
+        --font-size-xs: 0.68rem;
+        --font-size-sm: 0.78rem;
+        --font-size-base: 0.85rem;
+        --font-size-lg: 1.1rem;
+        --font-size-xl: 1.35rem;
+
+        /* Spacing */
+        --sidebar-width: 272px;
+      }
+
+      /* G7: Dark mode support (prepared) */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-bg: #0f172a;
+          --color-bg-card: #1e293b;
+          --color-bg-subtle: #1e293b;
+          --color-border: #334155;
+          --color-border-light: #1e293b;
+          --color-text: #f1f5f9;
+          --color-text-secondary: #94a3b8;
+          --color-text-muted: #64748b;
+        }
+      }
+      /* V8 Row color coding by status */
+      tr.row-status-open td { background: rgba(245,158,11,0.06) !important; }
+
+      /* G5: Skeleton shimmer animation */
+      @keyframes skeleton-shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      tr.row-status-progress td { background: rgba(59,130,246,0.06) !important; }
+      tr.row-status-closed td { background: rgba(34,197,94,0.05) !important; }
+      tr.row-status-cancelled td { background: rgba(148,163,184,0.07) !important; }
+      tr.row-status-open:hover td { background: rgba(245,158,11,0.13) !important; }
+      tr.row-status-progress:hover td { background: rgba(59,130,246,0.11) !important; }
+      tr.row-status-closed:hover td { background: rgba(34,197,94,0.10) !important; }
+      
+      /* V8 Table base styles */
+      #claimsTable { border-collapse: collapse; box-sizing: border-box; }
+      #claimsTable td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; font-size: 0.82rem; padding: 5px 8px; box-sizing: border-box; }
+      #claimsTable td.td-cb { width: 36px; min-width: 36px; max-width: 36px; padding: 0; text-align: center; }
+      #claimsTable td.td-exp { width: 32px; min-width: 32px; max-width: 32px; padding: 0; text-align: center; }
+      #claimsTable th.th-cb { width: 36px; min-width: 36px; max-width: 36px; }
+      #claimsTable th.th-exp { width: 32px; min-width: 32px; max-width: 32px; }
+      
+      /* V8 Expand button */
+      .expand-btn { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 4px; border: 1px solid #e2e8f0; background: transparent; color: #94a3b8; cursor: pointer; font-size: 0.6rem; padding: 0; line-height: 1; transition: background 0.15s, color 0.15s, transform 0.15s; }
+      .expand-btn:hover { background: #f1f5f9; }
+      
+      /* V8 Subrow */
+      .subrow { display: none; }
+      .subrow.open { display: table-row; }
+      
+      /* V8 Subrow fields */
+      .subrow-fields { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+      .subrow-field { display: inline-flex; align-items: baseline; gap: 4px; font-size: 0.76rem; white-space: nowrap; }
+      .sf-label { font-weight: 700; color: #64748b; font-size: 0.67rem; text-transform: uppercase; letter-spacing: 0.04em; }
+      .sf-val { color: #0f172a; font-weight: 500; }
+      .sf-val.sf-empty { color: #94a3b8; font-style: italic; font-weight: 400; }
+      
+      /* V8 RAG Dot indicators */
+      .rag-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+      .rag-dot-green { background: #22c55e; }
+      .rag-dot-amber { background: #f59e0b; }
+      .rag-dot-red { background: #ef4444; }
+      
+      /* V8 Escalation badges */
+      .escalation-badge { display: inline-flex; align-items: center; gap: 3px; padding: 2px 7px; border-radius: 10px; font-size: 0.7rem; font-weight: 700; white-space: nowrap; }
+      .escalation-badge.lvl-ok { background: #dcfce7; color: #15803d; }
+      .escalation-badge.lvl-warn { background: #fef9c3; color: #854d0e; }
+      .escalation-badge.lvl-super { background: #ffedd5; color: #9a3412; }
+      .escalation-badge.lvl-mgr { background: #fee2e2; color: #b91c1c; }
+      .escalation-badge.lvl-approved { background: #dbeafe; color: #1d4ed8; }
+      
+      /* V8 Header styles */
+      #claimsTable th { background: #f8fafc; font-weight: 700; color: #64748b; font-size: 0.75rem; text-transform: uppercase; white-space: nowrap; letter-spacing: 0.02em; border-bottom: 2px solid #e2e8f0; position: relative; }
+      #claimsTable th .th-inner { padding: 9px 8px; display: flex; align-items: center; gap: 5px; }
+      #claimsTable th .th-label-text { flex: 1; }
+      #claimsTable th .filter-icon-btn { background: none; border: none; padding: 2px 4px; cursor: pointer; color: #94a3b8; font-size: 0.7rem; opacity: 0.6; transition: opacity 0.15s; }
+      #claimsTable th .filter-icon-btn:hover { opacity: 1; color: #3b82f6; }
+      #claimsTable th .filter-icon-btn.active { opacity: 1; color: #3b82f6; }
+      
+      /* V8 Status badges */
+      #claimsTable .badge { font-size: 0.68rem; font-weight: 600; }
+      
+      /* V8 QC Responsibility styling */
+      .qc-resp-yes { background: #fee2e2; color: #b91c1c; padding: 2px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 700; }
+      .qc-resp-no { background: #dcfce7; color: #15803d; padding: 2px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 700; }
+
+      /* V8 Drag indicator styles - blue border */
+      #claimsTable th.th-dragging { opacity: 0.7; cursor: grabbing !important; }
+      #claimsTable th.th-dragging .th-inner { background: rgba(59, 130, 246, 0.1); }
+      #claimsTable th.th-drop-left { border-left: 3px solid #3b82f6 !important; }
+      #claimsTable th.th-drop-right { border-right: 3px solid #3b82f6 !important; }
+
+      /* V8 Table horizontal scroll */
+      .table-responsive { overflow-x: scroll; overflow-y: visible; }
+      #claimsTable { width: auto; }
+
+      /* ═══════════════════════════════════════════════════════════════════ */
+      /* Mobile Global Styles */
+      /* ═══════════════════════════════════════════════════════════════════ */
+      @media (max-width: 991px) {
+        /* F3: Touch-friendly tap targets */
+        button, .btn, [role="button"], select, input[type="checkbox"], input[type="radio"] {
+          min-height: 44px;
+        }
+        a, button, .clickable {
+          min-width: 44px;
+        }
+
+        /* F6: Mobile-optimized form inputs */
+        input, select, textarea {
+          font-size: 16px !important;
+        }
+        input[type="text"], input[type="number"], input[type="date"],
+        input[type="email"], input[type="password"], select, textarea {
+          padding: 10px 12px !important;
+        }
+
+        /* F28: Safe area insets for notched phones */
+        body {
+          padding-bottom: env(safe-area-inset-bottom, 0px);
+          padding-top: env(safe-area-inset-top, 0px);
+          padding-left: env(safe-area-inset-left, 0px);
+          padding-right: env(safe-area-inset-right, 0px);
+        }
+
+        /* Prevent zoom on input focus in iOS */
+        input, select, textarea {
+          -webkit-text-size-adjust: 100%;
+        }
+
+        /* Mobile table improvements */
+        table {
+          -webkit-overflow-scrolling: touch;
+        }
+
+        /* Mobile card padding */
+        .card, [style*="border-radius: 12px"] {
+          padding: 16px !important;
+        }
+      }
+
+      /* F29: Orientation change - landscape adjustments */
+      @media (max-width: 991px) and (orientation: landscape) {
+        .main-content {
+          padding-top: 100px !important;
+          padding-bottom: 60px !important;
+        }
+      }
+
+      /* F29: Portrait adjustments */
+      @media (max-width: 991px) and (orientation: portrait) {
+        .main-content {
+          padding-bottom: 80px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
