@@ -110,6 +110,7 @@ export interface Claim {
   fid: string
   location: string
   styleNo: string
+  styleNo3D: boolean
   orderNo: string
   articleNo: string
   inspector: string
@@ -128,6 +129,8 @@ export interface Claim {
   fullCheckRejectionRate: string
   status: ClaimStatus
   qcResponsibility: string
+  claimResponsibility: string
+  claimSample: boolean
   rcaReport: string
   rcaStatus: RcaStatus
   repeatDefectFlag: boolean
@@ -178,6 +181,8 @@ export interface ClaimFilters {
   qcInformDate?: string
   qualityDigit?: string
   qcResponsibility?: string
+  claimResponsibility?: string
+  claimSample?: string
   attachments?: string
   rca?: string
 }

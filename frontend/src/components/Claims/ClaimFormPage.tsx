@@ -42,11 +42,12 @@ const DEFECT_TEMPLATES: Record<string, string[]> = {
 
 const initialForm: ClaimRequest = {
   claimNo: '', vendor: '', customer: '', fid: '', location: '',
-  styleNo: '', orderNo: '', articleNo: '', inspector: '', factoryAgent: '',
+  styleNo: '', styleNo3D: false, orderNo: '', articleNo: '', inspector: '', factoryAgent: '',
   shippedQty: 0, claimQty: 0, qcInformedQty: 0, claimDate: '', marketInspectionDate: '',
   qcInformDate: '', defectCategory: '', qualityDigit: '', defectDescription: '',
   defectRateByCustomer: '', fullCheckResult: '', fullCheckRejectionRate: '',
-  status: 'OPEN', qcResponsibility: '', rcaReport: '', repeatDefectFlag: false,
+  status: 'OPEN', qcResponsibility: '', claimResponsibility: '', claimSample: false,
+  rcaReport: '', repeatDefectFlag: false,
   repeatOrderNo: '', repeatOrderDeliveryDate: '', repeatOrderRemark: '',
   rcaStatus: undefined as any, rcaSupervisorComment: '', rcaManagerComment: '',
   createdBy: '', updatedBy: ''
@@ -879,7 +880,18 @@ const ClaimFormPage: React.FC = () => {
               </datalist>
             </Field>
             <Field label="Style No.">
-              <input style={inputStyle} value={form.styleNo} onChange={set('styleNo')} placeholder="Enter style number" />
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <input style={{ ...inputStyle, flex: 1 }} value={form.styleNo} onChange={set('styleNo')} placeholder="Enter style number" />
+                <label style={{ display: 'flex', alignItems: 'center', gap: 4, whiteSpace: 'nowrap', fontSize: 13, cursor: 'pointer' }}>
+                  <input 
+                    type="checkbox" 
+                    checked={!!form.styleNo3D}
+                    onChange={e => setForm(f => ({ ...f, styleNo3D: e.target.checked }))}
+                    style={{ width: 13, height: 13, accentColor: '#1a3a5c', cursor: 'pointer' }} 
+                  />
+                  <span style={{ fontWeight: 600, color: '#64748b' }}>3D</span>
+                </label>
+              </div>
             </Field>
             <Field label="Order No.">
               <input style={inputStyle} value={form.orderNo} onChange={set('orderNo')} placeholder="Enter order number" />
@@ -1005,14 +1017,34 @@ const ClaimFormPage: React.FC = () => {
               />
             </Field>
           </div>
-          {/* Row 5: QC Responsibility, QC Informed Qty, Status */}
-          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, minmax(140px, 1fr))', gap: 16 }}>
+          {/* Row 5: QC Responsibility, Claim Responsibility, Claim Sample, QC Informed Date, Status */}
+          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(5, minmax(140px, 1fr))', gap: 16, marginBottom: 16 }}>
             <Field label="QC Responsibility">
               <select style={inputStyle} value={form.qcResponsibility} onChange={set('qcResponsibility')}>
                 <option value="">-</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
               </select>
+            </Field>
+            <Field label="Claim Responsibility">
+              <select style={inputStyle} value={form.claimResponsibility} onChange={set('claimResponsibility')}>
+                <option value="">-</option>
+                <option value="Merch Dept.">Merch Dept.</option>
+                <option value="Fabric Dept.">Fabric Dept.</option>
+              </select>
+            </Field>
+            <Field label="Claim Sample">
+              <div style={{ display: 'flex', alignItems: 'center', height: 36 }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 6, cursor: 'pointer' }}>
+                  <input 
+                    type="checkbox" 
+                    checked={!!form.claimSample}
+                    onChange={e => setForm(f => ({ ...f, claimSample: e.target.checked }))}
+                    style={{ width: 13, height: 13, accentColor: '#1a3a5c', cursor: 'pointer' }} 
+                  />
+                  <span style={{ fontSize: 13, color: '#64748b' }}>Yes</span>
+                </label>
+              </div>
             </Field>
             <Field label="QC Informed Date">
               <DateInput 

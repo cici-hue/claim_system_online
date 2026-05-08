@@ -957,9 +957,11 @@ Score each criterion from 1 (poor) to 5 (excellent). Return ONLY valid JSON in t
           <Field label="Full Check Result" value={claim.fullCheckResult} />
           <Field label="Full Check Rejection Rate" value={claim.fullCheckRejectionRate} />
         </div>
-        {/* Row 5: QC Responsibility, QC Informed Date, Status */}
-        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, minmax(140px, 1fr))', gap: 16 }}>
+        {/* Row 5: QC Responsibility, Claim Responsibility, Claim Sample, QC Informed Date, Status */}
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(5, minmax(140px, 1fr))', gap: 16 }}>
           <Field label="QC Responsibility" value={claim.qcResponsibility} />
+          <Field label="Claim Responsibility" value={claim.claimResponsibility} />
+          <Field label="Claim Sample" value={claim.claimSample ? 'Yes' : 'No'} />
           <Field label="QC Informed Date" value={claim.qcInformDate} />
           <Field label="Status" value={claim.status?.replace('_', ' ')} />
         </div>

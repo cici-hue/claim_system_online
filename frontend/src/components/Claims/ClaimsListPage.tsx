@@ -31,6 +31,8 @@ const ALL_COLUMNS: ColDef[] = [
   { key: 'defectCategory',       label: 'Defect Category',       filterKey: 'defectCategory', filterType: 'select', options: DEFECT_CATEGORIES, defaultVisible: true },
   { key: 'status',               label: 'Status',                filterKey: 'status',         filterType: 'select', options: ['OPEN', 'IN_PROGRESS', 'CLOSED', 'CANCELLED'], defaultVisible: true },
   { key: 'qcResponsibility',     label: 'QC Resp.',              filterKey: 'qcResponsibility', filterType: 'select', options: ['Yes', 'No'], defaultVisible: true },
+  { key: 'claimResponsibility',  label: 'Claim Resp.',           filterKey: 'claimResponsibility', filterType: 'select', options: ['Merch Dept.', 'Fabric Dept.'], defaultVisible: true },
+  { key: 'claimSample',          label: 'Claim Sample',          filterKey: 'claimSample',    filterType: 'select', options: ['Yes', 'No'], defaultVisible: true },
   { key: 'rca',                  label: 'RCA',                   filterKey: 'rca',            filterType: 'select', options: ['Approved', 'Submitted', 'Pend. Admin', 'Rejected', 'Done', 'Pending'], defaultVisible: true },
   { key: 'factoryAgent',         label: 'Factory Agent',         filterKey: 'factoryAgent',   filterType: 'select', options: [],        defaultVisible: false },
   { key: 'inspector',            label: 'QC Trip Leader',        filterKey: 'inspector',      filterType: 'select', options: INSPECTORS, defaultVisible: false },
@@ -1876,6 +1878,15 @@ const ClaimsListPage: React.FC = () => {
         return claim.qcResponsibility === 'Yes' 
           ? <span className="qc-resp-yes">Yes</span>
           : <span className="qc-resp-no">No</span>
+      }
+      case 'claimResponsibility': {
+        if (!claim.claimResponsibility) return '-'
+        return <span style={{ fontWeight: 500, color: '#1a3a5c' }}>{claim.claimResponsibility}</span>
+      }
+      case 'claimSample': {
+        return claim.claimSample 
+          ? <span style={{ fontWeight: 500, color: '#16a34a' }}>Yes</span>
+          : <span style={{ color: '#94a3b8' }}>No</span>
       }
       case 'attachments': {
         if (!claim.attachments || claim.attachments.length === 0) return '-'
